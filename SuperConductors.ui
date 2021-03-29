@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>796</width>
+    <height>488</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget_superconductor_STM" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>761</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <widget class="QListWidget" name="dat_file_list">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>51</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>存放加载上来的文件名</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Single_Pixel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>441</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>single_pixel</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_fitting_parameters">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>120</y>
+      <width>231</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>显示拟合参数并可以自行调节</string>
+    </property>
+    <property name="title">
+     <string>拟合参数</string>
+    </property>
+    <widget class="QLabel" name="label_parameter_A">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>显示参数A的拟合结果</string>
+     </property>
+     <property name="text">
+      <string>参数A:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_parameter_B">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>90</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>显示参数B的拟合结果</string>
+     </property>
+     <property name="text">
+      <string>参数B:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_parameter_C">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>150</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>显示参数C的拟合结果</string>
+     </property>
+     <property name="text">
+      <string>参数C:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_parameter_D">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>220</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>显示参数D的拟合结果</string>
+     </property>
+     <property name="text">
+      <string>参数D:</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_parameter_A">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_parameter_B">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_parameter_C">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>170</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_parameter_D">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>240</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_D_min">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_D_max">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>240</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_C_min">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_C_max">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>170</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_B_min">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>可输入参数B的下限,否则用默认值</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_B_max">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>110</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>可输入参数B的上限,否则用默认值</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_A_max">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>50</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>可输入参数A的上限,否则用默认值</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_parameter_A_min">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>可输入参数A的下限,否则用默认值</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_move_A">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>连续变化参数A,可在拟合之间简单尝试</string>
+     </property>
+     <property name="text">
+      <string>move_A</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_move_D">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>210</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>连续变化参数D,可在拟合之间简单尝试</string>
+     </property>
+     <property name="text">
+      <string>move_D</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_move_C">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>连续变化参数C,可在拟合之间简单尝试</string>
+     </property>
+     <property name="text">
+      <string>move_C</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_move_B">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>80</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>连续变化参数B,可在拟合之间简单尝试</string>
+     </property>
+     <property name="text">
+      <string>move_B</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Load_dat_file_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>51</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>加载dat文件</string>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_fitting">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>231</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>进行超导拟合</string>
+    </property>
+    <property name="title">
+     <string>拟合</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_fitting">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::ActionsContextMenu</enum>
+     </property>
+     <property name="toolTip">
+      <string>进行拟合</string>
+     </property>
+     <property name="text">
+      <string>拟合</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_isotropic">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>67</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>选择一种各项同性的拟合方式</string>
+     </property>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项同性s波拟合">s</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项同性p波拟合">p</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项同性d波拟合">d</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项同性双s波拟合">2s</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_isotropic">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>84</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>是否进行各项同性拟合</string>
+     </property>
+     <property name="text">
+      <string>isotropic</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_anisotropic">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>10</y>
+       <width>84</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>是否进行各项异性拟合</string>
+     </property>
+     <property name="text">
+      <string>anisotropic</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_anisotropic">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>40</y>
+       <width>67</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>选择一种各项异性的拟合方式</string>
+     </property>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项异性s波拟合">s</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项异性p波拟合">p</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项异性d波拟合">d</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string extracomment="进行各项异性双s波拟合">2s</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
